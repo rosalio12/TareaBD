@@ -8,20 +8,5 @@ cursor.execute("insert into users (name, telefono) values ('Rosalio', '123456789
 conn.commit()
 
 
-def select_01():
-   conn = conectar()
-   cursor = conn.cursor()
-   cursor.execute("SELECT * FROM users")
-    for r in  cursor.fetchall():
-       print(r)
-    clonn.close()
-   
-   def select_02():
-    conn = conectar()
-    cursor = conn.cursor()
-    cursor.execute("SELECT name FROM users")
-    for r in  cursor.fetchall():
-       print(r)
-       clon.close()
 
 conn.close()

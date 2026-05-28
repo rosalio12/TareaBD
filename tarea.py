@@ -263,7 +263,16 @@ def crear_db():
 if __name__ == "__main__":
     if "--soluciones" in sys.argv:
         crear_db()
-        print("Soluciones creadas.")
-    else:
+        print("Soluciones creadas.") 
+    crear_db()
+    select_01()
+    select_02()
+    select_03()
+    select_04()
+    select_05()
+else:
         crear_db()
         print("Ejercicios creados.")
+
+
+
